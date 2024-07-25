@@ -1,0 +1,86 @@
+---
+import SectionCard from '../../components/section-card.astro';
+import SkillPill from '../../components/skill-pill.astro';
+import AstroIcon from '../../icons/astro-icon.astro';
+import ReactIcon from '../../icons/react.astro';
+import TypeScriptIcon from '../../icons/typescript.astro';
+import NextjsIcon from '../../icons/nextjs.astro';
+import TailwindIcon from '../../icons/tailwind.astro';
+import T3StackIcon from '../../icons/t3-stack.astro';
+import HtmlIcon from '../../icons/html.astro';
+import CssIcon from '../../icons/css.astro';
+import NodeIcon from '../../icons/node.astro';
+import PostgrsqlIcon from '../../icons/postgresql.astro';
+import MongoIcon from '../../icons/mongodb.astro';
+import PythonIcon from '../../icons/python.astro';
+import DjangoIcon from '../../icons/django.astro';
+import PrismaIcon from '../../icons/prisma.astro';
+---
+
+<SectionCard>
+  <div class="w-full items-start justify-start flex flex-col">
+    <h2>Skills</h2>
+  </div>
+  <div
+    class="w-full h-full flex flex-wrap items-center justify-center gap-3 sm:flex-row"
+  >
+    <div
+      class="w-full flex flex-wrap items-start justify-center space-y-2 space-x-2"
+    >
+      <div class="w-full flex flex-wrap items-center justify-center gap-4">
+        <SkillPill>
+          <HtmlIcon class="size-8" /> HTML
+        </SkillPill>
+        <SkillPill>
+          <CssIcon class="size-8" /> CSS
+        </SkillPill>
+        <SkillPill>
+          <TypeScriptIcon class="size-8" /> TypeScript
+        </SkillPill>
+        <SkillPill>
+          <PythonIcon class="size-8" /> TypeScript
+        </SkillPill>
+        <SkillPill>
+          <AstroIcon class="size-8" />
+          Astro
+        </SkillPill>
+        <SkillPill>
+          <NextjsIcon class="size-8" />
+          Next.js
+        </SkillPill>
+        <SkillPill>
+          <TailwindIcon class="size-8" />
+          Tailwind CSS
+        </SkillPill>
+        <SkillPill>
+          <T3StackIcon class="size-8" />
+          T3 Stack
+        </SkillPill>
+        <SkillPill>
+          <ReactIcon class="size-8" />
+          React
+        </SkillPill>
+        <SkillPill>
+          <NodeIcon class="size-8" />
+          Node.js
+        </SkillPill>
+        <SkillPill>
+          <MongoIcon class="size-8" />
+          MongoDB
+        </SkillPill>
+        <SkillPill>
+          <PostgrsqlIcon class="size-8" />
+          PostgrSQL
+        </SkillPill>
+        <SkillPill>
+          <PrismaIcon class="size-8" />
+          Prisma
+        </SkillPill>
+        <SkillPill>
+          <DjangoIcon class="size-8" />
+          Django
+        </SkillPill>
+      </div>
+    </div>
+  </div>
+</SectionCard>

@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Main from '../sections/main/main.astro';
+import ProjectSection from '../sections/projects/project-section.astro';
+import Skill from '../sections/skills/skill.astro';
+---
+
+<Layout
+  title="Portfolio de Sergio MD - Desarrollador y Programador Web"
+  description="Contrata a Sergio para crear tu apliación web. Desarrollador FullStack. "
+>
+  <main class="space-y-6">
+    <Main />
+    <Skill />
+    <ProjectSection id="projects" />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+  }
+</style>

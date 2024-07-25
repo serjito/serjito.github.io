@@ -1,0 +1,92 @@
+---
+import GitHub from '../icons/git-hub.astro';
+import Linkedin from '../icons/linkedin.astro';
+import Mail from '../icons/mail.astro';
+import X from '../icons/x.astro';
+---
+
+<div class="flex items-center justify-end space-x-3 w-full">
+  <ul class="flex list-none flex-row space-x-4">
+    <li>
+      <a href="">
+        <GitHub size={17} class="icon" />
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <X size={17} class="icon" />
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <Linkedin size={17} class="icon" />
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <Mail size={17} class="icon" />
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style>
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 0.1rem;
+  }
+
+  li a {
+    text-decoration: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: #1f2837ff;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #4b5563ff;
+    overflow: hidden;
+    margin-top: 12px;
+  }
+  li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    scale: 1 0;
+    transform-origin: bottom;
+    transition: scale 0.5 ease;
+  }
+
+  li:hover a::before {
+    scale: 1 1;
+  }
+  .icon {
+    font-size: 1rem;
+    color: hsl(203, 94%, 6%);
+    transition: 0.5 ease;
+    z-index: 2;
+  }
+  li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  li:nth-child(1) {
+    --bg-color: #000;
+  }
+  li:nth-child(3) {
+    --bg-color: #0077b5;
+  }
+  li:nth-child(2) {
+    --bg-color: #000;
+  }
+  li:nth-child(4) {
+    --bg-color: #000;
+  }
+</style>

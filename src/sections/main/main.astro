@@ -1,0 +1,44 @@
+---
+import Button from '../../components/button.astro';
+import LinkButton from '../../components/link-button.astro';
+import SectionCard from '../../components/section-card.astro';
+---
+
+<SectionCard>
+  <div class="flex flex-col items-start gap-6 sm:flex-row">
+    <div class="flex items-center gap-4 sm:flex-col">
+      <img
+        src="https://imgs.search.brave.com/ZQjfVHqXQksgiIGTgA4JeOK3tk-Aaqy89w1uVpdl9QY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk1EWXlNbUV3/TnprdFpHRmxOeTAw/TWpGaUxXSmhOV010/TlRaaVkySXhZelpq/TkRrMFhrRXlYa0Zx/Y0dkZVFYVnlOall6/TkRFNE9EQUAuanBn"
+        alt="sergio"
+        width={320}
+        height={320}
+        class="h-24 w-24 max-w-none rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52"
+      />
+      <Button>Download CV</Button>
+    </div>
+    <div class="flex w-full flex-col gap-5">
+      <div class="flex w-full flex-col justify-between gap-2 sm:flex-row">
+        <div class="w-full">
+          <h2 class="text-xl tracking-tighter">Sergio Matamoro Diaz</h2>
+          <p class="text-[16px] tracking-tighter text-slate-300">
+            FullStack Developer
+          </p>
+        </div>
+        <LinkButton />
+      </div>
+      <div class="flex flex-col gap-6">
+        <div class="inline-grid xl:grid-cols-[auto_auto]">
+          <p class="tracking-tighter text-left text-[16px]">
+            Soy Sergio, un desarrollador Full Stack apasionado por crear
+            soluciones web eficientes y escalables. Con experiencia en frontend
+            y backend, transformo ideas en productos digitales robustos y de
+            alto rendimiento. Mi objetivo es siempre entregar código limpio y
+            mantenible que potencie la experiencia del usuario y satisfaga las
+            necesidades del negocio.
+          </p>
+        </div>
+        <div class="flex flex-col gap-4"></div>
+      </div>
+    </div>
+  </div>
+</SectionCard>
